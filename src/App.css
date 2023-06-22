@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+#hoveranimation {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+#hoveranimation:hover {
+  top: -10px;
+  
+}
+
+#hoveranimation2 {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+#hoveranimation2:hover {
+  top: 20px;
+}

@@ -1,6 +1,8 @@
 import './App.css';
 import left from './imgs/1.png';
 import right from './imgs/2.png';
+import full from './imgs/fullscreen.png';
+import mobile from './imgs/mobile.png';
 function App() {
   return (
    <div className="App">
@@ -34,19 +36,47 @@ function App() {
     </div>
 
     <div className=' pt-10 flex flex-col w-full h-auto max-h-[800px] gap-10 lg:flex-row justify-center items-center md:pr-10 md:pl-10 lg:pr-20 lg:pl-20 ' >
-          <div className='bg-slate-300 w-2/3 max-h-[625px] overflow-hidden rounded-3xl'>
+          <div className='bg-slate-300 md:hover:drop-shadow-xl w-2/3 max-h-[625px] overflow-hidden rounded-3xl' id="hoveranimation">
             <div className='relative pb-10'>
               <div className='absolute right-5 top-5 text-xl md:text-4xl md:right-10 md:top-10'>SOS Game</div>
               <div className='absolute right-5 top-12 text-xl md:text-4xl md:right-10 md:top-24'>Java</div>
             </div>
-            <img src={left}/>
+            <img src={left} id="hoveranimation2"/>
           </div>
-          <div className='bg-slate-300 w-2/3 max-h-[625px] overflow-hidden rounded-3xl'>
+          <div className='bg-slate-300 hover:drop-shadow-xl w-2/3 max-h-[625px] overflow-hidden rounded-3xl' id="hoveranimation">
           <div className='relative pb-10'>
               <div className='absolute right-5 top-5 text-xl md:text-4xl md:right-10 md:top-10'>Portfolio</div>
               <div className='absolute right-5 top-12 text-xl md:text-4xl md:top-24 md:right-10'>React / JS</div>
             </div>
-          <img src={left}/>
+          <img src={left} id="hoveranimation2"/>
+          </div>
+    </div>
+
+    <div className='flex flex-col' >
+    <div className='text-6xl mt-20 sm:text-8xl md:text-8xl lg:text-8xl pt-20 md:pt-40'>
+      In Progress. 
+    </div>
+    <div className='text-l m-8 sm:text-2xl md:text-2xl lg:text-2xl'>
+    Work in various states of design and development, from side projects, to in-flight product design and development.
+        </div>
+    </div>
+
+    <div className=' pt-10 flex flex-col w-full h-auto max-h-[800px] gap-10 lg:flex-row justify-center items-center md:pr-10 md:pl-10 lg:pr-20 lg:pl-20 ' >
+          <div className='bg-slate-300 md:hover:drop-shadow-xl w-2/3 max-h-[613px] overflow-hidden rounded-3xl' id="hoveranimation">
+            <div className='relative pb-10'>
+              <div className='absolute right-5 top-5 text-xl md:text-4xl md:right-10 md:top-10'>The Blast Monkeys</div>
+              <div className='absolute right-5 top-12 text-xl md:text-4xl md:right-10 md:top-24'>React / JS</div>
+            </div>
+            <div className="flex justify-center">
+            <img src={full} id="hoveranimation2" className="pt-20 md:pt-40"/>
+            </div>
+          </div>
+          <div className='bg-slate-300 hover:drop-shadow-xl w-2/3 md:w-1/3 max-h-[625px] overflow-hidden rounded-3xl' id="hoveranimation">
+          <div className='relative pb-10'>
+              <div className='absolute right-5 top-5 text-xl md:text-4xl md:right-10 md:top-10'>RetroQuest</div>
+              <div className='absolute right-5 top-12 text-xl md:text-4xl md:top-24 md:right-10'>Swift</div>
+            </div>
+          <img src={mobile} id="hoveranimation2" className='pt-10 md:pt-20'/>
           </div>
     </div>
 
