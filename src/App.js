@@ -1,86 +1,33 @@
 import './App.css';
-import left from './imgs/1.png';
-import right from './imgs/2.png';
-import full from './imgs/fullscreen.png';
-import mobile from './imgs/mobile.png';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from "react-router-dom";
+import Home from './pages/Home';
+import About from './pages/About';
+import Portfolio from './pages/Portfolio';
+import Lumos from './pages/Lumos';
+import RQ from './pages/RQ';
+import TBM from './pages/TBM';
 function App() {
   return (
-   <div className="App">
+    <>
+    <Router>
+      <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/about" element={<About/>}/>
+      <Route path='/portfolio' element={<Portfolio/>}/>
+      <Route path='/lumos' element={<Lumos/>}/>
+      <Route path='/theblastmonkeys' element={<TBM/>}/>
+      <Route path='/retroquest' element={<RQ/>}/>
+      </Routes>
+        
+        
+    </Router>
 
-    {/* NAV BAR */}
-    <div className='flex flex-row sticky top-0 justify-center items-center w-full h-20'>
-    <div className='flex  ring-2 ring-slate-500/30 rounded-3xl backdrop-blur-sm items-center justify-center p-5 h-3/4 gap-10 md:gap-20 lg:gap-20'>
-  <div className='md:pt-3 md:pb-3 md:pr-7 md:pl-7 lg:pt-3 lg:pb-3 lg:pr-7 lg:pl-7 rounded-3xl md:hover:bg-slate-600 lg:hover:bg-slate-600'>Work</div>
-  <div className='md:pt-3 md:pb-3 md:pr-7 md:pl-7 lg:pt-3 lg:pb-3 lg:pr-7 lg:pl-7 rounded-3xl md:hover:bg-slate-600 lg:hover:bg-slate-600'>About</div>
-  <div className='md:pt-3 md:pb-3 md:pr-7 md:pl-7 lg:pt-3 lg:pb-3 lg:pr-7 lg:pl-7 rounded-3xl md:hover:bg-slate-600 lg:hover:bg-slate-600'>Social</div>
-  <div className='md:pt-3 md:pb-3 md:pr-7 md:pl-7 lg:pt-3 lg:pb-3 lg:pr-7 lg:pl-7 rounded-3xl md:hover:bg-slate-600 lg:hover:bg-slate-600'>Contact</div>
-    </div>
-    </div>
-
-
-
-
-
-    {/* INTRO WITH NAME */}
-
-    <div className='flex flex-col' >
-    <div className='text-6xl mt-20 sm:text-8xl md:text-8xl lg:text-8xl'>
-      Hi. I'm Tea. 
-    </div>
-    <div className='text-6xl m-3 sm:text-8xl md:text-8xl lg:text-8xl' >
-     A Developer.
-    </div>
-    <div className='text-l m-8 sm:text-2xl md:text-2xl lg:text-2xl'>
-    As a developer and generalist designer, I'm passionate about bringing digital visions to life that are fun, useful, and user-centric.
-    </div>
-    </div>
-
-    <div className=' pt-10 flex flex-col w-full h-auto max-h-[800px] gap-10 lg:flex-row justify-center items-center md:pr-10 md:pl-10 lg:pr-20 lg:pl-20 ' >
-          <div className='bg-slate-300 md:hover:drop-shadow-xl w-2/3 max-h-[625px] overflow-hidden rounded-3xl' id="hoveranimation">
-            <div className='relative pb-10'>
-              <div className='absolute right-5 top-5 text-xl md:text-4xl md:right-10 md:top-10'>SOS Game</div>
-              <div className='absolute right-5 top-12 text-xl md:text-4xl md:right-10 md:top-24'>Java</div>
-            </div>
-            <img src={left} id="hoveranimation2"/>
-          </div>
-          <div className='bg-slate-300 hover:drop-shadow-xl w-2/3 max-h-[625px] overflow-hidden rounded-3xl' id="hoveranimation">
-          <div className='relative pb-10'>
-              <div className='absolute right-5 top-5 text-xl md:text-4xl md:right-10 md:top-10'>Portfolio</div>
-              <div className='absolute right-5 top-12 text-xl md:text-4xl md:top-24 md:right-10'>React / JS</div>
-            </div>
-          <img src={left} id="hoveranimation2"/>
-          </div>
-    </div>
-
-    <div className='flex flex-col' >
-    <div className='text-6xl mt-20 sm:text-8xl md:text-8xl lg:text-8xl pt-20 md:pt-40'>
-      In Progress. 
-    </div>
-    <div className='text-l m-8 sm:text-2xl md:text-2xl lg:text-2xl'>
-    Work in various states of design and development, from side projects, to in-flight product design and development.
-        </div>
-    </div>
-
-    <div className=' pt-10 flex flex-col w-full h-auto max-h-[800px] gap-10 lg:flex-row justify-center items-center md:pr-10 md:pl-10 lg:pr-20 lg:pl-20 ' >
-          <div className='bg-slate-300 md:hover:drop-shadow-xl w-2/3 max-h-[613px] overflow-hidden rounded-3xl' id="hoveranimation">
-            <div className='relative pb-10'>
-              <div className='absolute right-5 top-5 text-xl md:text-4xl md:right-10 md:top-10'>The Blast Monkeys</div>
-              <div className='absolute right-5 top-12 text-xl md:text-4xl md:right-10 md:top-24'>React / JS</div>
-            </div>
-            <div className="flex justify-center">
-            <img src={full} id="hoveranimation2" className="pt-20 md:pt-40"/>
-            </div>
-          </div>
-          <div className='bg-slate-300 hover:drop-shadow-xl w-2/3 md:w-1/3 max-h-[625px] overflow-hidden rounded-3xl' id="hoveranimation">
-          <div className='relative pb-10'>
-              <div className='absolute right-5 top-5 text-xl md:text-4xl md:right-10 md:top-10'>RetroQuest</div>
-              <div className='absolute right-5 top-12 text-xl md:text-4xl md:top-24 md:right-10'>Swift</div>
-            </div>
-          <img src={mobile} id="hoveranimation2" className='pt-10 md:pt-20'/>
-          </div>
-    </div>
-
-   </div>
+   
+    </>
   );
 }
 
