@@ -1,6 +1,8 @@
 function TBM(){
     return(
-        <></>
+        <div className="App">
+            
+        </div>
     );
 }
 

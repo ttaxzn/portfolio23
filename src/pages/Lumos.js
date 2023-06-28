@@ -1,6 +1,6 @@
 function Lumos(){
     return(
-        <></>
+        <div className="App"></div>
     );
 }
 
