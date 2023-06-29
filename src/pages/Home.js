@@ -26,7 +26,7 @@ function Home() {
 
       <div className=" pt-10 flex flex-col w-full h-auto max-h-[800px] gap-10 md:flex-row justify-center items-center md:pr-10 md:pl-10 lg:pr-20 lg:pl-20 ">
         <div
-          className="bg-[#a68a64] drop-shadow-md md:hover:drop-shadow-xl w-2/3 max-h-[625px] overflow-hidden rounded-3xl"
+          className="bg-[#a68a64] drop-shadow-md md:hover:drop-shadow-xl w-2/3 max-h-[625px] overflow-hidden rounded-[50px] md:rounded-[100px]"
           id="hoveranimation"
         >
           <div className="relative pb-10">
@@ -42,7 +42,7 @@ function Home() {
           </Link>
         </div>
         <div
-          className="bg-[#283618] drop-shadow-md hover:drop-shadow-xl w-2/3 max-h-[625px] overflow-hidden rounded-3xl"
+          className="bg-[#283618] drop-shadow-md hover:drop-shadow-xl w-2/3 max-h-[625px] overflow-hidden rounded-[50px] md:rounded-[100px]"
           id="hoveranimation"
         >
           <div className="relative pb-10">
@@ -71,7 +71,7 @@ function Home() {
 
       <div className=" pt-10 flex flex-col w-full h-auto max-h-[800px] gap-10 lg:flex-row justify-center items-center md:pr-10 md:pl-10 lg:pr-20 lg:pl-20 ">
         <div
-          className="bg-[#a4ac86] drop-shadow-md md:hover:drop-shadow-xl w-2/3 max-h-[325px] md:max-h-[613px] overflow-hidden rounded-3xl"
+          className="bg-[#a4ac86] drop-shadow-md md:hover:drop-shadow-xl w-2/3 max-h-[325px] md:max-h-[613px] overflow-hidden rounded-[50px] md:rounded-[100px]"
           id="hoveranimation"
         >
           <div className="relative pb-10">
@@ -94,7 +94,7 @@ function Home() {
           </div>
         </div>
         <div
-          className="bg-[#7f4f24] drop-shadow-md hover:drop-shadow-xl w-2/3 md:w-1/3 max-h-[325px] md:max-h-[613px] overflow-hidden rounded-3xl"
+          className="bg-[#7f4f24] drop-shadow-md hover:drop-shadow-xl w-2/3 md:w-1/3 max-h-[325px] md:max-h-[613px] overflow-hidden rounded-[50px] md:rounded-[100px]"
           id="hoveranimation"
         >
           <div className="relative pb-10">
