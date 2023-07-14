@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 function Footer() {
@@ -27,7 +28,7 @@ function Footer() {
         </div>
         <div className="flex flex-col font-['Nunito']">
           <div className="font-bold">Contact</div>
-          <div className="">Message</div>
+          <div className=""><Link to="/contact">Message</Link></div>
         </div>
       </div>
     </div>
