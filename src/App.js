@@ -10,10 +10,12 @@ import Portfolio from './pages/Portfolio';
 import Lumos from './pages/Lumos';
 import RQ from './pages/RQ';
 import TBM from './pages/TBM';
+import ScrollToTop from './components/ScrollToTop';
 function App() {
   return (
     <>
     <Router>
+      <ScrollToTop>
       <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/about" element={<About/>}/>
@@ -22,7 +24,7 @@ function App() {
       <Route path='/theblastmonkeys' element={<TBM/>}/>
       <Route path='/retroquest' element={<RQ/>}/>
       </Routes>
-        
+      </ScrollToTop>
         
     </Router>
 
