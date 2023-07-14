@@ -30,6 +30,11 @@ function Portfolio() {
             <div className="pb-2 font-['Nunito']">Role</div>
             <div className="font-['Nunito']">Product Designer, Front End</div>
           </div>
+
+          <div className="">
+            <div className="pb-2 font-['Nunito']">Skills</div>
+            <div className="font-['Nunito']">React.js, JavaScript, Tailwind</div>
+          </div>
         </div>
       </div>
 

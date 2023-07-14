@@ -8,7 +8,7 @@ function Footer() {
       </div>
       <div className="flex flex-row gap-20">
         <div className="flex flex-col font-['Nunito']">
-          <div className="">Elsewhere</div>
+          <div className="font-bold">Elsewhere</div>
           <div className="">
             <a
               href="https://www.github.com/ttaxzn"
@@ -26,7 +26,7 @@ function Footer() {
           </div>
         </div>
         <div className="flex flex-col font-['Nunito']">
-          <div className="">Contact</div>
+          <div className="font-bold">Contact</div>
           <div className="">Message</div>
         </div>
       </div>

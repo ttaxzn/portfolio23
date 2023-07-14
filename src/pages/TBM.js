@@ -28,6 +28,13 @@ function TBM() {
             <div className="pb-2 font-['Nunito']">Role</div>
             <div className="font-['Nunito']">Product Designer, Front End</div>
           </div>
+
+          <div className="">
+            <div className="pb-2 font-['Nunito']">Skills</div>
+            <div className="font-['Nunito']">
+              React.js, JavaScript, Bootstrap, Tailwind
+            </div>
+          </div>
         </div>
       </div>
 
@@ -36,9 +43,33 @@ function TBM() {
           <img src={blastlogo} className="drop-shadow-md" alt="screenshot" />
         </div>
       </div>
+      <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col gap-10 w-full pl-10 pr-10 pt-20 md:pl-0 md:pr-0 md:w-1/3">
+          <div className="text-3xl font-['Brandey']">Overview</div>
+          <div className="font-['Nunito']">
+            The Blast Monkeys project is an ambitious undertaking focused on
+            reinvigorating the online presence of a highly talented band based
+            out of Kansas City, Missouri. As a collective known for their
+            dynamic performances and vibrant tunes, The Blast Monkeys desired a
+            web platform that reflected their energy, creativity, and musical
+            spirit.
+          </div>
+
+          <div className="font-['Nunito']">
+            The aim of this project was to design and develop a website that not
+            only promotes the band and their music but also connects them with
+            their fan base in a more engaging and interactive way. The site
+            serves as the digital face of the band, offering fans and potential
+            booking agents a glimpse into the band's world — their music, tour
+            dates, behind-the-scenes stories, and more.
+          </div>
+        </div>
+      </div>
 
       <div className="flex flex-col justify-center items-center">
         <div className="flex flex-col gap-10 w-full pl-10 pr-10 pt-20 md:pl-0 md:pr-0 md:w-1/3">
+        <div className="text-3xl font-['Brandey']">Development</div>
+
           <div className="font-['Nunito']">
             TheBlastMonkeys.com, in its original design, had its charm, however,
             given the rapidly evolving digital landscape, a revamp was overdue.
@@ -114,9 +145,13 @@ function TBM() {
             with continued efforts to enhance and refine its user interface and
             overall functionality. For a real-time look at the ongoing evolution
             of the site, you're invited to visit the current live version at
-            <a href="https://www.theblastmonkeys.com" className="underline"> theblastmonkeys.com</a>. Your patience and understanding are appreciated
-            as we strive to create an engaging and intuitive platform for all
-            Blast Monkeys enthusiasts.
+            <a href="https://www.theblastmonkeys.com" className="underline">
+              {" "}
+              theblastmonkeys.com
+            </a>
+            . Your patience and understanding are appreciated as we strive to
+            create an engaging and intuitive platform for all Blast Monkeys
+            enthusiasts.
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import { Link } from "react-router-dom";
 import me from "../imgs/me.JPG";
 function About() {
   return (
@@ -105,7 +106,7 @@ function About() {
         <div className="flex flex-col justify-center items-center md:p-10">
           <div className="flex flex-col md:bg-[#a4ac86] rounded-[200px] w-full p-20">
             <div className="flex flex-col md:flex-row">
-              <div className="flex flex-col pb-10">
+              <div className="flex flex-col pb-10 md:w-1/2">
                 <div className="font-['Nunito'] text-xl md:pl-10 pb-2 md:text-3xl">
                   01
                 </div>
@@ -121,7 +122,7 @@ function About() {
                 </div>
               </div>
 
-              <div className="flex flex-col pb-10">
+              <div className="flex flex-col pb-10 md:w-1/2">
                 <div className="font-['Nunito'] text-xl md:pl-10 md:pr-10 pb-2 md:text-3xl">
                   02
                 </div>
@@ -138,8 +139,9 @@ function About() {
                 </div>
               </div>
             </div>
+
             <div className="flex flex-col md:flex-row">
-              <div className="flex flex-col pb-10">
+              <div className="flex flex-col pb-10 md:w-1/2">
                 <div className="font-['Nunito'] text-xl md:pl-10 pb-2 md:text-3xl">
                   03
                 </div>
@@ -155,7 +157,7 @@ function About() {
                 </div>
               </div>
 
-              <div className="flex flex-col pb-10">
+              <div className="flex flex-col pb-10 md:w-1/2">
                 <div className="font-['Nunito'] text-xl md:pl-10 md:pr-10 pb-2 md:text-3xl">
                   04
                 </div>
@@ -197,6 +199,17 @@ function About() {
             </div>
           </div>
         </div>
+
+        <div className="flex flex-col justify-center items-center w-100% pt-10 pb-10 md:pt-40 md:pb-20">
+        <Link to='/contact'>
+        <div className="flex flex-col border-solid border-4 border-[#283618] rounded-[400px] bg-[#fefae0] hover:bg-[#a4ac86] hover:text-[#fefae0]">
+          <div className="text-3xl md:text-6xl p-10 font-['Brandey']">
+            Contact
+          </div>
+        </div>
+        </Link>
+      </div>
+
         <Footer />
       </div>
     </>
