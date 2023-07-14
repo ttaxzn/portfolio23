@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import mockup from "../imgs/mobilemockup.png";
 import flow from "../imgs/flowchart.png";
 import footer from "../imgs/footer.png";
+import code from "../imgs/codesnippet.png";
 
 function Portfolio() {
   return (
@@ -126,7 +127,7 @@ function Portfolio() {
 
       <div className="flex flex-col justify-center items-center">
         <div className="flex flex-col gap-10 w-full pl-10 pr-10 pt-20 md:pl-0 md:pr-0 md:w-1/3">
-          <div className="text-3xl font-['Brandey']">Footer</div>
+          <div className="text-3xl font-['Brandey']">Footer Component</div>
           <div className="font-['Nunito']">
             Components lie at the heart of React's philosophy, encapsulating
             logic and styling into self-contained units that can manage their
@@ -158,11 +159,70 @@ function Portfolio() {
 
       <div className="flex flex-col justify-center items-center">
         <div className="flex flex-col gap-10 w-full pl-10 pr-10 pt-20 md:pl-0 md:pr-0 md:w-1/3">
+          <div className="text-3xl font-['Brandey']">
+            Scroll To Top Component
+          </div>
+          <div className="font-['Nunito']">
+            The ScrollToTop React component that I've incorporated into my
+            website plays a critical role in streamlining the user experience by
+            providing smooth navigation across the site. Utilizing hooks from
+            both React and React Router, I've crafted this component to scroll
+            the window back to the top whenever the route location changes. In
+            simpler terms, when a visitor navigates from one page to another,
+            ScrollToTop ensures that the new page begins from the top, rather
+            than maintaining the scroll position of the previous page.
+          </div>
+          <div className="font-['Nunito']">
+            Here's how I've structured the component:
+            <ol className="list-decimal list-inside pt-5 pb-5">
+              <li>
+                {" "}
+                I've imported useEffect from React and useLocation from React
+                Router.
+              </li>
+              <li>
+                {" "}
+                I've defined a functional component, ScrollToTop, which uses the
+                useLocation hook to monitor the current location (route).
+              </li>
+              <li>
+                {" "}
+                Within ScrollToTop, I've utilized the useEffect hook to run a
+                function every time the location changes. This function,
+                window.scrollTo(0, 0), scrolls the window back to the top.
+              </li>
+              <li>
+                The component then returns its children components, which are
+                passed to it via props.
+              </li>
+            </ol>
+            By integrating ScrollToTop into my portfolio website, I ensure that
+            no matter what route a visitor takes—be it from the Home page to the
+            About page or from one project to another in the Portfolio—every new
+            page always starts from the top. This facilitates a seamless,
+            intuitive browsing experience that adheres to standard web
+            navigation practices, making ScrollToTop an integral part of the
+            user-friendly design of my site.
+          </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col justify-center items-center pt-10">
+        <div className="flex p-5 md:p-0">
+          <img src={code} className="drop-shadow-md" alt="screenshot" />
+        </div>
+      </div>
+
+      <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col gap-10 w-full pl-10 pr-10 pt-20 md:pl-0 md:pr-0 md:w-1/3">
           <div className="font-['Nunito']">
             For a deeper dive into my work and the projects I've undertaken,
-            feel free to visit my GitHub <a href="https://www.github.com/ttaxzn" className="underline">HERE</a> or below in the footer. I
-            welcome any opportunity to collaborate and am always open to
-            feedback. Thank you for your interest in my work!
+            feel free to visit my GitHub at{" "}
+            <a href="https://www.github.com/ttaxzn" className="underline">
+              github.com/ttaxzn
+            </a>{" "}
+            or below in the footer. I welcome any opportunity to collaborate and
+            am always open to feedback. Thank you for your interest in my work!
           </div>
         </div>
       </div>
