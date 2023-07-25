@@ -32,3 +32,14 @@
 #hoveranimation2:hover {
   top: 20px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .disappear{
+    display: none;
+  }
+
+  .pad{
+    padding-bottom: 15%;
+  }
+
+}
